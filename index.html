@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon says</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>You are in the SIMON SAYS game</h1>
+        <h3 class="start_instruction hidden">Click anywhere once to start the game</h3>
+    </div>
+    <div class="box_area">
+        <div class="box_container">
+            <div class="red"></div>
+            <div class="blue"></div>
+            <div class="green"></div>
+            <div class="yellow"></div>
+        </div>
+        <div class="game_over ">Game Over</div>
+    </div>
+
+    <div class="score_area hidden">
+        <div class="final_score">
+            <h2>Your score is:&nbsp;</h2>
+            <h2 class="the_score">67</h2>
+        </div>
+        <div class="high_score">
+            <h3>High score is: &nbsp;</h3>
+            <h3 class="the_high_score">4</h3>
+        </div>
+    </div>
+
+    <div class="new_game_start">
+        <button class="new_game_button">start new game</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

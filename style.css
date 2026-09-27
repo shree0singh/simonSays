@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100vw;
+    margin:20px 0px;
+}
+
+.box_area{
+    display:grid;
+    height:fit-content;
+    grid-template-areas: "same";
+    width: 100vw;
+    justify-content: center;
+}
+
+.game_over{
+    font-size: 120px;
+    grid-area: same;
+    align-self: center;
+    justify-self: center;
+    color: white;
+    font-family: "Press Start 2P", cursive;
+    border: 1px solid black;
+    background-color: black;
+
+}
+
+.box_container{
+    height:fit-content;
+    width: fit-content;
+    grid-area: same;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-areas: 
+        "red blue"
+        "green yellow";   
+    gap:10px;      
+}
+
+.box_container div{
+    height:170px;
+    width:170px;
+    border:1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.box_container div:active{
+    background-color: transparent !important;
+}
+
+.red {
+    grid-area: red;
+    background-color: #ef4444; /* red */
+    color: #ffffff;
+}
+
+.yellow {
+    grid-area: yellow;
+    background-color: #ffed22; /* yellow */
+    color: #000000;
+}
+
+.blue {
+    grid-area: blue;
+    background-color: #3b82f6; /* blue */
+    color: #ffffff;
+}
+
+.green {
+    grid-area: green;
+    background-color: #22c55e; /* green */
+    color: #ffffff;
+}
+
+.no_color{
+    background-color: transparent !important;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.score_area{
+    width:100vw;
+    height: fit-content;
+    /* border:1px solid red; */
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score_area > div{
+    display:flex;
+}
+
+.new_game_start{
+    height:fit-content;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.new_game_button{
+    height:fit-content;
+    width: fit-content;
+    padding:15px;
+    font-size: x-large;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
